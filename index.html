@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <link rel="stylesheet" href="./public/styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="formulario login">
+            <form action="/submit" method="post" id="formulariol">
+                <h1>Inicie Sesión</h1>
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Ej. Pablo">
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Ingrese su contraseña">
+                <a href="#">Olvidó su contraseña?</a>
+                <button type="submit">Loguearse</button>
+            </form>
+        </div>
+        <div class="formulario registro">
+            <form action="/submit" method="post" id="formularior">
+                <h1>Registro</h1>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+        
+        <div class="animacion-container">
+            <div class="animacion">
+                <div class="animacion-panel animacion-left">
+                    <h1>Ya tienes una cuenta?</h1>
+                    <button class="hidden" id="login">Iniciar Sesión</button>
+                </div>
+                <div class="animacion-panel animacion-right">
+                    <h1>Todavia no tienes una cuenta?</h1>
+                    <button class="hidden" id="registro">Crear Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            📖Creado por Julian Godoy📖
+        </p>
+    </footer>
+    <script src="./public/script.js"></script>
+</body>
+</html>
